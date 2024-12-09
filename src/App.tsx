@@ -8,6 +8,7 @@ function App() {
 
   useEffect(() => {
     console.log("Hello World!");
+    console.log(import.meta.env.VITE_TEST_SECRET);
   })
 
   return (

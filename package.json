@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
@@ -27,5 +29,5 @@
     "typescript-eslint": "^8.15.0",
     "vite": "^6.0.1"
   },
-  "homepage": "https://heoseonjin0504.github.io/host-test"
+  "homepage": "https://heoseonjin0504.github.io/host-test/"
 }

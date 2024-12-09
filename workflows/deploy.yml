@@ -1,0 +1,11 @@
+name: Deploy Workflow
+on : push
+  branches: "main"
+
+jobs:
+  deploy:
+    name: "Adding a new secret"
+    steps:
+      - name: Hello world action
+        env: # Or as an environment variable
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
